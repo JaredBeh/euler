@@ -105,8 +105,17 @@ Data Types and Variables
 
 
 
-
 2015-09-18 Fri
+SoTD: "Superstitious" — Stevie Wonder
+Aim: A vast array of possibilities.
+
+Do Now: How do you declare/use arrays in Java?
+
+Mentioned:
+$ echo $PATH
+$ which emacs
+
+plus C funsies
 
 
 
