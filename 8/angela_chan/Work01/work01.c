@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int summult35(){
   int result = 0;
@@ -26,6 +27,7 @@ int sumfib(){
   } printf("Sum of even fibonacci numbers: %d\n", result);
   return 0;
 }
+
 
 int main(){
   summult35();
