@@ -53,6 +53,7 @@ int euler5(){
 int main(){
   printf("Euler1 = %d\n", euler1());
   printf("Euler2 = %d\n", euler2());
+  printf("Euler3 = %d\n", euler3());
   printf("Euler5 = %d\n", euler5());
   return 0;
 }
