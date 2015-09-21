@@ -38,7 +38,7 @@ int main() {
         tmp_prod = 1;
         for (i = 0; i < 13; i++) {
             if (get_num(num[counter + i]) == 0) {
-                i = 13; // Just set i to break loop guard for a nice break
+                i = 13;       // Just set i to break loop guard for a nice break
                 tmp_prod = 0; // Ensure the product won't be the new maximum
             }
             tmp_prod = tmp_prod * get_num(num[counter + i]);
