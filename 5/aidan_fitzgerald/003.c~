@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+  const long NUM = 600851475143;
+
+  return 0;
+}
