@@ -1,4 +1,4 @@
-2015-09-10
+2015-09-10 Thurs
 Aim: Time to C what we can do.
 
 Do Now: What command line programs would do the following?
@@ -12,7 +12,7 @@ Do Now: What command line programs would do the following?
 
 
 
-2015-09-11
+2015-09-11 Fri
 Aim: C what I did there?
 
 Do now:
@@ -45,7 +45,7 @@ Do now:
 
 
 
-Wed 2015-09-16
+2015-09-16 Wed
 Aim: Variables are the spice of life.
 
 Do Now: What is the smallest variable type that could be used to store the following values (using standard sizes)?
@@ -56,6 +56,7 @@ Do Now: What is the smallest variable type that could be used to store the follo
 	4) 5,000,000,000	float
 	
 C Primitive Variable Types
+	
 	All C primitives are numeric.
 	
 	The only difference is floating point vs. integer and size of variable.
@@ -77,6 +78,65 @@ C Primitive Variable Types
 		0  == false
 		!0 == true
 		
-		YOU WILL ALL MAKE THIS mISTAKE:
-			if(x = 6) {...}
+		YOU WILL ALL MAKE THIS MISTAKE:
+			if(x = 6) {…}
+
+
+
+2015-09-17 Thurs
+Aim: Always read the fine print.
+
+Do Now: Open up your editor of choice (Emacs), write a basic "Hello, world!" program in Java.
+
+Data Types and Variables
+	
+	Character literals are single characters inside ''.
+		e.g., 'a', '*'
+	
+	String literals exist, even though there is no string data type.
+		e.g., "hello", "you smell"
+	
+	Any variable type can be decalred an "unsigned" variable. This signifies the variable will never be negative.
+		The lower bound of any unsigned variable is 0.
+		The upper bound will be greater than the signed version.
 		
+		e.g.	unsigned char x;
+				0 <= x <= 255
+
+
+
+2015-09-18 Fri
+SoTD: "Superstitious" — Stevie Wonder
+Aim: A vast array of possibilities.
+
+Do Now: How do you declare/use arrays in Java?
+
+Mentioned:
+$ echo $PATH
+$ which emacs
+
+plus C funsies
+
+
+
+2015-09-21 Mon
+
+
+
+2015-09-22 Tues
+
+
+
+2015-09-25 Fri
+
+
+
+2015-09-28 Mon
+
+
+
+2015-09-29 Tues
+
+
+
+2015-09-30 Wed
