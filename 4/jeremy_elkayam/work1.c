@@ -18,7 +18,19 @@ int prob6(){
   return sqsum-sumsq;
 }
 int prob2(){
-  return 0;
+  int result=0;
+  int dex=1;
+  while(0<1){
+    int fibbed=fib(dex);
+    if(fibbed<4000000){
+      if(fibbed%2==0){
+	result+=fibbed;
+      }
+    }else{
+      return result;
+    }
+    dex++;
+  }
 }
 int fib(int dex){
   if(dex==1 || dex==2){
