@@ -57,6 +57,7 @@ int main(){
     }  
   }
   sum -= 30; //for nums without and
+  sum += 11 //for one thousand
   printf("%i \n", sum);
   return sum;
 }
