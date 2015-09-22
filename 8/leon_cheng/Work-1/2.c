@@ -26,29 +26,29 @@ int main(){
     }
     arr[0]=arr[1];
     arr[1]=arr[2];
-    arr[2]=arr[0];
+    arr[2]=0;
+  }
 
+
+  /*
+    long sum = 0;
+    long arr[3];
+    arr[0]=1;
+    arr[1]=1;
+    arr[2]=0;
+    
+    while (arr[2]<=4000){
+    arr[2]=arr[0]+arr[1];
+    printf("arr[2]=%lu\n",sum);
+    if(arr[2]%2==0){
+    sum+=arr[2];
+    }
+    arr[0]=arr[1];
+    arr[1]=arr[2];
+    
+    }
+  */
   
-
-    /*
-      long sum = 0;
-      long arr[3];
-      arr[0]=1;
-      arr[1]=1;
-      arr[2]=0;
-      
-      while (arr[2]<=4000){
-      arr[2]=arr[0]+arr[1];
-      printf("arr[2]=%lu\n",sum);
-      if(arr[2]%2==0){
-      sum+=arr[2];
-      }
-      arr[0]=arr[1];
-      arr[1]=arr[2];
-      
-      }
-    */
-
   printf("sum=%lu\n",sum);
   
   return 0;
