@@ -6,8 +6,10 @@
 /*Helper Functions*/
 
 int isPrime(int x) {
-  for (int i = 2; i < sqrt(x); i++) {
-    if (x % i == 0) {
+  int i;
+  double n = (double) x
+  for (i = 2; i < sqrt(n); i++) {
+    if (n % i == 0) {
       return 0;
     }
   }
@@ -42,7 +44,8 @@ int isPalindrome(int x) {
 
 long eulerOne() {
   long solution = 0.0;
-  for (int i = 2; i < 1000; i++) {
+  int i;
+  for (i = 2; i < 1000; i++) {
     if (i % 3 == 0 || i % 5 == 0) {
       solution += i;
     }
@@ -67,7 +70,8 @@ long eulerTwo() {
 
 int eulerThree() {
   int largestPrimeFactor = 1;
-  for (int i = 2; i < sqrt(600851475143); i++) {
+  int i;
+  for (i = 2; i < sqrt(600851475143); i++) {
     if (600851475143 % i == 0 && isPrime(i) == 1) {
       largestPrimeFactor = i;
     }
@@ -78,8 +82,9 @@ int eulerThree() {
 
 long eulerFour() {
   long largestPalindrome = 0.0;
-  for (int i = 100; i < 1000; i++) {
-    for (int j = 100; j < 1000; j++) {
+  int i, j;
+  for (i = 100; i < 1000; i++) {
+    for (j = 100; j < 1000; j++) {
       if (isPalindrome(i * j) && i * j > largestPalindrome) {
 	largestPalindrome = i*j;
       }

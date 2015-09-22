@@ -34,13 +34,14 @@ int squaresum(int roof){
 }
 
 int sumsquarediff(int roof){
-  return sumsquare(roof) - squaresum(roof);
+  return abs(sumsquare(roof) - squaresum(roof));
 }
 
-int lim = 1000;
 
 int main(){
-  printf("The sum of all multiples of 3 or 5 below %d is %d\n", lim, mult3or5(lim));
+  printf("%d\n", mult3or5(1000));
+  printf("%d\n", sumsquarediff(10));
+  printf("%d\n", sumsquarediff(100));
 
   return 0;
 }
