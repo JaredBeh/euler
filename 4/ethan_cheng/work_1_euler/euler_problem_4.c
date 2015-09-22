@@ -4,10 +4,9 @@
 typedef int bool;
 
 bool is_palindrome(int i) {
-    int tmp, rev, tens;
+    int tmp, rev;
     tmp = i;
     rev = 0;
-    tens = 0;
     while (tmp > 0) {
         rev = rev * 10 + tmp % 10;
         tmp = tmp / 10;
@@ -17,6 +16,7 @@ bool is_palindrome(int i) {
 
 int main() {
     int factor1, factor2, ans;
+    ans = 0;
     for (factor1 = 999; factor1 > 100; factor1--) {
         if (factor1 % 10 == 0) {
             continue; // If 10 is a factor, it's impossible to be palindromic
