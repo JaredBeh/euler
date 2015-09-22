@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <math.h>
 
+#define getBit(i, bitvector) (bitvector[i / 64] & (1 << i % 64)) >> i % 64
+#define setBit(i, bitvector) bitvector[i / 64] |= 1 << i % 64
+
 /* unsigned cuz I hate complex numbers ;) */
 unsigned int isqrt(unsigned long n) {
   double sr = sqrt((double) n);
@@ -19,15 +22,17 @@ int main() {
 
   /* sieve is where we mark off multiples of prime numbers that have been tested */
   unsigned long factors[spaces];
+
   unsigned long sieve[spaces];
-#define getBit(i, bitvector) (bitvector[i / 64] & (1 << i % 64)) >> i % 64
-#define setBit(i, bitvector) bitvector[i / 64] |= 1 << i % 64
   setBit(0, sieve);
   setBit(1, sieve);
 
   unsigned int p;
+
   for (p = 2; p < maxTest && n > 1; p++) {
+
     if (!getBit(p, sieve)) {
+
       /* mark off p if it is factor of n */
       if (n % p == 0) {
 	setBit(p, factors);
@@ -35,12 +40,15 @@ int main() {
 	  n /= p;
 	}
       }
+
       /* mark off multiples of p, regardless of what happened */
       unsigned int multiple;
       for (multiple = p; multiple < maxTest; multiple++) {
 	setBit(multiple, sieve);
       }
+
     }
+
   }
 
   /* find max prime factor */
