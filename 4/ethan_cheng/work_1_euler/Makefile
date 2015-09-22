@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -O2 -Wall -Wextra -Werror -Wshadow -std=c99 -pedantic -g -fwrapv
+CFLAGS=-O2 -m32 -Wall -Wextra -Werror -Wshadow -std=c99 -pedantic -g -fwrapv
 OUTFLAG=-o
 
 ALL:
