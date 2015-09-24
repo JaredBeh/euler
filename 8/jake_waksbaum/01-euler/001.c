@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-main() {
-
-    printf("%u", sum_of_mult35_below(1000));
-
-    return 0;
+int div_by(int dividend, int divisor) {
+    return 0 == dividend % divisor;
 }
 
-sum_of_mult35_below(int ceil) {
-    unsigned int n = 0, 
+int sum_of_mult35_below(unsigned int ceil) {
+    unsigned int n = 0,
                  total = 0;
 
     for (n = 1; n < ceil; n++) {
@@ -20,6 +17,8 @@ sum_of_mult35_below(int ceil) {
     return total;
 }
 
-div_by(int dividend, int divisor) {
-    return 0 == dividend % divisor;
+int main() {
+    printf("%u", sum_of_mult35_below(1000));
+
+    return 0;
 }
