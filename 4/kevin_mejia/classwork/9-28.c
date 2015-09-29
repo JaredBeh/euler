@@ -19,8 +19,15 @@ int main(){
   printf("Pdouble = %lu\n" , Pdouble);
   printf("Pchar = %lu\n" , Pchar);
 
-  printf("*Pint = %d\n",*Pint);
+  //  printf("*Pint = %d\n",*Pint);
+  int ray[5];
+  int *rp = ray;
+  printf("ray = %p\n", ray);
+  printf("rp = %p\n", rp);
 
+  //rp[2] <==> *rp + 2)
+  //*2(2+rp <==> 2[rp]
+  //doesn't make any sense dont do it
 
   return 0;
 }
