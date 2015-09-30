@@ -1,1 +1,6 @@
-# I have no idea what to ignore...
+# emacs junk
+*~
+\#*#
+
+# object files
+*.o

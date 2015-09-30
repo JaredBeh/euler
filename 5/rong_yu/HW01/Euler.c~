@@ -1,0 +1,19 @@
+#include <stdio.h> //standard input output
+#include <stdlib.h> //standard library
+//#include "mylib.h"
+
+int main(){
+
+  int answer=0;
+  for (int i=0; i<1000; i++){
+    if (i%3==0 || i%5==0){
+      answer+=i;
+    }
+  }
+
+  //printf("Hi... Bye.\n");
+  //printf("bob = %f\n", bob);
+  
+  return answer;
+
+}
