@@ -1,6 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int len(char *s) {
+  char *i = s;
+  int length = 0;
+  while (*i++) { //returns i and adds 1 to it
+    length++;
+  }
+  return length;
+}
+
 int main() {
   /* int a = 1;
   double b = 2;
@@ -28,7 +37,7 @@ int main() {
   printf("*pb = %lf\n", *pb);
   printf("*pc = %c\n", *pc);
   */
-
+  /*
   int ray[5];
   int *rp = ray;
   ray[0] = 3;
@@ -43,7 +52,10 @@ int main() {
   printf("*(ray + 2) = %d\n", *(ray + 2));
   printf("ray[2] = %d\n", ray[2]);
   printf("2[ray] = %d\n", 2[ray]);
+  */
+  char s[] = "This is a string with 36 characters.";
 
+  printf("\"%s\" is a string with %d characters.\n", s, len(s));
 
   return 0;
 }
